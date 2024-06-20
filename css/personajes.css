@@ -72,8 +72,8 @@ h1 {
 }
 
 .lista-de-personajes {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
 }
 
