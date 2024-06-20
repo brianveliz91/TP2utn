@@ -79,11 +79,10 @@ p {
 }
 
 #peliculas img {
-    max-width: auto
-    margin: 10px 0;
-    border-radius: 5px;
-    margin: 20px 0;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -135,4 +134,31 @@ h3 {
     outline: none;
     cursor: pointer;
   }
+
+  /*RESPOSIVE TABLET*/
+@media (max-width: 880px) {
+
+    .casa:hover {
+        transform: none;
+    }
+    #musicahp {
+      display: none;
+  }
+  }
+  
+  /*RESPONSIVE CELULAR*/
+  
+  @media (max-width:480px) {
+
+    .casa:hover {
+        transform: none;
+    }
+    #musicahp {
+      display: none;
+  }
+  
+  
+  }
+  
+  
   

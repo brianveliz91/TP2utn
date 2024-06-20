@@ -192,7 +192,10 @@ h1 {
         transform: none;
         background-color: #333;
     }
-}
+
+    #musicahp {
+      display: none;
+    }
 
 @media (max-width: 480px) {
    
@@ -205,5 +208,9 @@ h1 {
     .character:hover, .character-no-image:hover {
         transform: none;
         background-color: #333;
+    }
+
+    #musicahp {
+        display: none;
     }
 }
