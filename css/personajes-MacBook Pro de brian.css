@@ -91,10 +91,6 @@ h1 {
     overflow: hidden;
 }
 
-.character:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
 
 .character h3 {
     font-size: 1.2em;
@@ -111,6 +107,11 @@ h1 {
 .character p {
     font-size: 0.9em;
     color: #6b4226;
+}
+
+.character:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .character::before {
@@ -148,61 +149,63 @@ h1 {
     top: -50%;
 }
 
-.character-no-image {
-    border: 2px solid #4b2e83;
-    border-radius: 10px;
-    background-color: #fff8e7;
-    margin: 10px;
-    padding: 15px;
-    width: 180px;
-    text-align: center;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    overflow: hidden;
-}
+#musicahp {
+    
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    z-index: 1000;
+    
+  }
+  
+  #musicahp audio {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+  }
 
-.character-no-image:hover {
-    transform: scale(1.02);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
+/* Responsive tablet */
 
-.character-no-image h3 {
-    font-size: 1.2em;
-    color: #6b4226;
-    margin-bottom: 10px;
-}
-
-.character-no-image p {
-    font-size: 0.9em;
-    color: #6b4226;
-    margin: 2px 0;
-}
-
-/*RESPONSIVE TABLET */
 @media (max-width: 880px) {
-   
+    
 
-    .character, .character-no-image {
+    .character {
+        flex: 1 1 calc(50% - 20px);
         margin: 10px;
     }
 
-   
-    .character:hover, .character-no-image:hover {
+    
+    .character:hover {
         transform: none;
         background-color: #333;
     }
 }
 
 @media (max-width: 480px) {
-   
+    .character {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
 
-    .character, .character-no-image {
-        margin: 10px;
+    
+    .character:hover  {
+        transform: none;
+        background-color: #333;
+    }
+}
+
+/*RESPONSIVE CELULAR*/
+
+@media (max-width: 480px) {
+    .character {
+        flex: 1 1 100%;
+        margin: 10px 0;
     }
 
    
-    .character:hover, .character-no-image:hover {
+    .character:hover {
         transform: none;
         background-color: #333;
     }

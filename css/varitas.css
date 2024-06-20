@@ -9,41 +9,35 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-
-header {
+header{
   background-color: #343a40;
   color: white;
-  padding: 10px 0;
+  padding: 1em 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 header img {
-  width: 50px;
-  height: auto;
-  margin: 0 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1em;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-li {
-  padding: ;
-}
+    width: 50px; 
+    height: auto;
+    margin: 0 10px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
 
 
 #search {
@@ -59,7 +53,6 @@ li {
 
 main {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para el contenido */
   border-radius: 10px;
 }
 
@@ -72,13 +65,17 @@ h1 {
 }
 
 .varita {
-
-  background-color: #fff8e7;
   border: 2px solid #4b2e83;
   border-radius: 10px;
+  background-color: #fff8e7;
+  margin: 10px;
   padding: 15px;
-  display: flex;
-  align-items: center;
+  width: 180px;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -116,6 +113,70 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+}
+
+#musicahp {
+    
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  z-index: 1000;
+  
+}
+
+#musicahp audio {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+ /*RESPOSIVE TABLET*/
+@media (max-width: 880px) {
+  #varita-info {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .varita img {
+    max-width: 120px;
+  }
+}
+
+/*RESPONSIVE CELULAR*/
+
+@media (max-width:480px) {
+  header {
+    flex-direction: column;
+  }
+
+  input {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  #varita-info {
+    grid-template-columns: 1fr;
+
+  }
+
+  .varita {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .varita img {
+    max-width: 100px;
+    margin: 0 0 10px 0 ;
+
+  }
+
+  .varita div {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+
 }
 
 
