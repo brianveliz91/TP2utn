@@ -181,6 +181,12 @@ h1 {
 
 /*RESPONSIVE TABLET */
 @media (max-width: 880px) {
+
+    .lista-de-personajes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
    
 
     .character, .character-no-image {
@@ -198,6 +204,12 @@ h1 {
     }
 
 @media (max-width: 480px) {
+
+    .lista-de-personajes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
    
 
     .character, .character-no-image {
